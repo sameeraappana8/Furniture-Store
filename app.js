@@ -20,6 +20,12 @@ let cart = [];
 //buttons
 let buttonsDOM = [];
 
+document.querySelector(".banner-btn").addEventListener("click", function () {
+  productsDOM.scrollIntoView({
+    behavior: "smooth",
+  });
+});
+
 //getting the products
 class Products {
   async getProducts() {
